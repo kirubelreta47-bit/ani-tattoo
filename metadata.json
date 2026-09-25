@@ -1,0 +1,7 @@
+{
+  "name": "ANI TATTOO",
+  "description": "ANI TATTOO (@anitattoooo) - Luxury contemporary tattoo studio specializing in fine-line, micro-realism, custom black & grey, and bespoke tattoo art.",
+  "requestFramePermissions": [],
+  "majorCapabilities": ["MAJOR_CAPABILITY_SERVER_SIDE_GEMINI_API"]
+}
+

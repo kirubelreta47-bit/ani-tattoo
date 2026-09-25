@@ -1,0 +1,83 @@
+@import "tailwindcss";
+
+@theme {
+  --font-serif: 'Cinzel', serif;
+  --font-display: 'Manrope', sans-serif;
+  --font-sans: 'Manrope', -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, sans-serif;
+  --font-mono: 'Space Grotesk', monospace;
+  --color-brand-bg: #F9F9FB;
+  --color-brand-surface: #FFFFFF;
+  --color-brand-surface-light: #F4F4F7;
+  --color-brand-border: #E4E4E7;
+  --color-brand-dark: #111113;
+  --color-brand-text: #18181B;
+  --color-brand-muted: #71717A;
+}
+
+@layer base {
+  body {
+    font-family: var(--font-sans);
+    background-color: #F9F9FB;
+    color: #18181B;
+  }
+
+  h1, h2, h3, h4, h5, h6, .font-editorial {
+    font-family: var(--font-sans);
+    letter-spacing: -0.025em;
+  }
+
+  .font-brand {
+    font-family: var(--font-sans);
+  }
+}
+
+/* Custom scrollbar for clean light aesthetic */
+::-webkit-scrollbar {
+  width: 6px;
+  height: 6px;
+}
+
+::-webkit-scrollbar-track {
+  background: #F4F4F6;
+}
+
+::-webkit-scrollbar-thumb {
+  background: #D4D4D8;
+  border-radius: 2px;
+}
+
+::-webkit-scrollbar-thumb:hover {
+  background: #A1A1AA;
+}
+
+/* Clean glassmorphism & cards */
+.light-glass {
+  background-color: rgba(255, 255, 255, 0.82);
+  backdrop-filter: blur(20px);
+  -webkit-backdrop-filter: blur(20px);
+}
+
+.light-card {
+  background: #FFFFFF;
+  border: 1px solid rgba(0, 0, 0, 0.08);
+  box-shadow: 0 4px 20px -2px rgba(0, 0, 0, 0.04);
+}
+
+.light-card:hover {
+  border-color: rgba(0, 0, 0, 0.2);
+}
+
+/* Fine-line paper grain */
+.paper-grain {
+  background-image: radial-gradient(rgba(0, 0, 0, 0.03) 1px, transparent 0);
+  background-size: 24px 24px;
+}
+
+.hairline-border {
+  border-color: rgba(0, 0, 0, 0.08);
+}
+
+.vertical-text {
+  writing-mode: vertical-rl;
+  text-orientation: mixed;
+}
